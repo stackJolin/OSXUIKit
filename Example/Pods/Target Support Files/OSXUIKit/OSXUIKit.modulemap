@@ -1,0 +1,6 @@
+framework module OSXUIKit {
+  umbrella header "OSXUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
