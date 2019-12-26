@@ -32,8 +32,10 @@
 - (NSDragOperation)draggingEntered:(id<NSDraggingInfo>)sender {
     
     if (self.isDragValid) {
-        [self show];
-        return NSDragOperationCopy;
+        if (self.isDragValid(sender)) {
+            [self show];
+            return NSDragOperationCopy;
+        }
     }
     
     return NSDragOperationNone;
@@ -59,7 +61,6 @@
     
     return true;
 }
-
 
 
 @end

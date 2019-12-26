@@ -36,4 +36,8 @@
     
 }
 
+- (BOOL)isFlipped {
+    return true;
+}
+
 @end

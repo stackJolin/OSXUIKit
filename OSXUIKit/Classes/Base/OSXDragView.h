@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) void (^willShow)(void);
 @property (nonatomic, copy) void (^willDismiss)(void);
-@property (nonatomic, copy) BOOL (^isDragValid)(void);
+@property (nonatomic, copy) BOOL (^isDragValid)(id<NSDraggingInfo>);
 @property (nonatomic, copy) void (^dragInfoHandler)(NSPasteboard *);
 
 @end
